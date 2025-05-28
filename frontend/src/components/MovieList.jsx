@@ -15,7 +15,7 @@ const MovieList = () => {
       <div className="movies-header">
         <button className="back-button" onClick={() => window.history.back()}>
           <span className="button-icon">🔙</span>
-          Back
+        
         </button>
         <h2>Movie Collection</h2>
       </div>
