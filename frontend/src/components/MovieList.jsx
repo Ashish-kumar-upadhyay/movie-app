@@ -5,7 +5,7 @@ const MovieList = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/movies')
+    axios.get('https://movie-app-1-8ppw.onrender.com/movies')
       .then(res => setMovies(res.data))
       .catch(() => alert("Failed to load movies"));
   }, []);
@@ -24,7 +24,7 @@ const MovieList = () => {
         {movies.map(movie => (
           <div key={movie._id} className="movie-card">
             <div className="movie-poster">
-              <img src={`http://localhost:5000/uploads/${movie.image}`} alt={movie.title} />
+              <img src={`https://movie-app-1-8ppw.onrender.com/uploads/${movie.image}`} alt={movie.title} />
             </div>
             <div className="movie-info">
               <h3>{movie.title}</h3>

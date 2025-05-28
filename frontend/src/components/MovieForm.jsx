@@ -21,7 +21,7 @@ const MovieForm = () => {
     Object.entries(form).forEach(([key, value]) => data.append(key, value));
 
     try {
-      await axios.post('http://localhost:5000/movies', data, {
+      await axios.post('https://movie-app-1-8ppw.onrender.com/movies', data, {
         headers: {
           'Authorization': token,
           'Content-Type': 'multipart/form-data'
